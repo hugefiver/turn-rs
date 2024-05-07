@@ -156,10 +156,7 @@ impl Controller {
             .0
             .lock()
             .await
-            .get_users(Request::new(QueryFilter {
-                skip: Some(skip),
-                limit: Some(limit),
-            }))
+            .get_users(Request::new(QueryFilter { skip, limit }))
             .await?
             .into_inner()
             .users;

@@ -8,17 +8,9 @@ readme = "../README.md"
 homepage = "https://github.com/mycrl/turn-rs"
 repository = "https://github.com/mycrl/turn-rs"
 license = "GPL-2.0-or-later"
-keywords = [
-    "stun",
-    "webrtc",
-    "turn",
-    "turn-server"
-]
+keywords = ["stun", "webrtc", "turn", "turn-server"]
 
-categories = [
-    "parsing",
-    "network-programming"
-]
+categories = ["parsing", "network-programming"]
 
 [dependencies]
 ahash = "0.8.3"
@@ -39,7 +31,7 @@ prost = "0.12"
 mimalloc = { version = "*", default-features = false }
 
 [build-dependencies]
-tonic-build = "0.10"
+tonic-build = { workspace = true }
 
 [features]
 system_allocator = []

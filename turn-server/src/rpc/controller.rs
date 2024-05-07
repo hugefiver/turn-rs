@@ -113,8 +113,8 @@ impl Controller for ControllerService {
                 .service
                 .get_router()
                 .get_users(
-                    request.get_ref().skip.unwrap_or(0) as usize,
-                    request.get_ref().limit.unwrap_or(20) as usize,
+                    request.get_ref().skip as usize,
+                    request.get_ref().limit as usize,
                 )
                 .into_iter()
                 .map(|(name, addrs)| User {

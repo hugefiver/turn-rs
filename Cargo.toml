@@ -16,3 +16,7 @@ members = [
     "turn-balance",
     "driver"
 ]
+
+[workspace.dependencies]
+tonic-build = "0.10"
+prost-build = "0.12"

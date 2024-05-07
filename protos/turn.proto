@@ -81,8 +81,8 @@ enum Transport {
 }
 
 message QueryFilter {
-    optional uint32 skip = 1;
-    optional uint32 limit = 2;
+    uint32 skip = 1;
+    uint32 limit = 2;
 }
 
 message AddrParams {
@@ -131,7 +131,7 @@ message Session {
 }
 
 message GetSessionReply {
-    optional Session session = 1;
+    Session session = 1;
 }
 
 service Controller {

@@ -7,7 +7,7 @@ edition = "2021"
 ahash = "0.8.3"
 anyhow = "1.0.76"
 clap = { version = "4", features = ["derive", "env"] }
-tokio = { version = "1.35.1", features = ["full"]}
+tokio = { version = "1.35.1", features = ["full"] }
 prost = "0.12"
 toml = "0.7"
 serde = { version = "1.0", features = ["derive"] }
@@ -18,7 +18,7 @@ num_cpus = "1.15"
 mimalloc = { version = "*", default-features = false }
 
 [build-dependencies]
-prost-build = "0.12"
+prost-build = { workspace = true }
 
 [features]
 system_allocator = []
